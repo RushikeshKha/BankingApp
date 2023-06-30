@@ -62,7 +62,7 @@ function ensureAuthenticated(req, res, next) {
 app.get('/', ensureAuthenticated, (req, res) => {
   // Access protected resources here
   // User details are available in req.user
-  res.send('Authenticated!');
+  res.send('Authenticated!!');
 });
 
 const port = process.env.PORT || 3000;
